@@ -1,0 +1,138 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="WeekCalculator.MainWindow"
+        Title="OOPCalculator"
+        Height="500" Width="500">
+
+    <StackPanel HorizontalAlignment="Center" Margin="20">
+        <TextBox x:Name="TextBox1" 
+        Height="100" Width="400"
+        TextWrapping="Wrap" 
+        HorizontalContentAlignment="Right" TextAlignment="Right"/>
+
+        <Grid ColumnDefinitions="100,100,100,100" RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+        Margin="40">
+
+<!-- First Row -->
+            <Button x:Name="ButtonAC" 
+            Width="50" Height="50" 
+            Click="ButtonACClick"
+            Grid.Row="0" Grid.Column="0"
+            HorizontalContentAlignment="Center">AC</Button>
+
+            <Button x:Name="ButtonPLM"
+            Width="50" Height="50" 
+            Click="ButtonPLMClick" 
+            Grid.Row="0" Grid.Column="1"
+            HorizontalContentAlignment="Center">+/-</Button>
+
+            <Button x:Name="ButtonMod" 
+            Width="50" Height="50" 
+            Click="ButtonModClick" 
+            Grid.Row="0" Grid.Column="2"
+            HorizontalContentAlignment="Center">%</Button>
+
+            <Button x:Name="ButtonDiv" 
+            Width="50" Height="50" 
+            Click="ButtonDivClick" 
+            Grid.Row="0" Grid.Column="3"
+            HorizontalContentAlignment="Center" >/</Button>
+<!-- Second Row -->
+            <Button x:Name="Button1" 
+            Width="50" Height="50" 
+            Click="Button1Click"
+            Grid.Row="1" Grid.Column="0"
+            HorizontalContentAlignment="Center">1</Button>
+
+            <Button x:Name="Button2" 
+            Width="50" Height="50" 
+            Click="Button2Click" 
+            Grid.Row="1" Grid.Column="1"
+            HorizontalContentAlignment="Center">2</Button>
+
+            <Button x:Name="Button3" 
+            Width="50" Height="50" 
+            Click="Button3Click" 
+            Grid.Row="1" Grid.Column="2"
+            HorizontalContentAlignment="Center">3</Button>
+
+            <Button x:Name="ButtonPlus" 
+            Width="50" Height="50" 
+            Click="ButtonPlusClick" 
+            Grid.Row="1" Grid.Column="3"
+            HorizontalContentAlignment="Center">+</Button>
+<!-- Third Row -->
+            <Button x:Name="Button4" 
+            Width="50" Height="50" 
+            Click="Button4Click"
+            Grid.Row="2" Grid.Column="0"
+            HorizontalContentAlignment="Center">4</Button>
+
+            <Button x:Name="Button5" 
+            Width="50" Height="50" 
+            Click="Button5Click" 
+            Grid.Row="2" Grid.Column="1"
+            HorizontalContentAlignment="Center">5</Button>
+
+            <Button x:Name="Button6" 
+            Width="50" Height="50" 
+            Click="Button6Click" 
+            Grid.Row="2" Grid.Column="2"
+            HorizontalContentAlignment="Center">6</Button>
+
+            <Button x:Name="ButtonMinus" 
+            Width="50" Height="50" 
+            Click="ButtonMinusClick" 
+            Grid.Row="2" Grid.Column="3"
+            HorizontalContentAlignment="Center">-</Button>
+<!-- Forth Row -->
+            <Button x:Name="Button7" 
+            Width="50" Height="50" 
+            Click="Button7Click"
+            Grid.Row="3" Grid.Column="0"
+            HorizontalContentAlignment="Center">7</Button>
+
+            <Button x:Name="Button8" 
+            Width="50" Height="50" 
+            Click="Button8Click" 
+            Grid.Row="3" Grid.Column="1"
+            HorizontalContentAlignment="Center">8</Button>
+
+            <Button x:Name="Button9"
+            Width="50" Height="50"
+            Click="Button9Click"
+            Grid.Row="3" Grid.Column="2"
+            HorizontalContentAlignment="Center">9</Button>
+
+            <Button x:Name="ButtonMultiply" 
+            Width="50" Height="50" 
+            Click="ButtonMultiplyClick" 
+            Grid.Row="3" Grid.Column="3"
+            HorizontalContentAlignment="Center">*</Button>
+<!-- Fifth Row -->
+            <Button x:Name="Button0" 
+            Width="150" Height="50" 
+            Click="Button0Click" 
+            Grid.Row="4" Grid.Column="0" Grid.RowSpan="2"
+            HorizontalContentAlignment="Center">0</Button>
+
+            <Button x:Name="ButtonDecimal" 
+            Width="50" Height="50" 
+            Click="ButtonDecimalClick" 
+            Grid.Row="6" Grid.Column="2"
+            HorizontalContentAlignment="Center">.</Button>
+
+            <Button x:Name="ButtonEqual" 
+            Width="50" Height="50" 
+            Click="ButtonEqualClick"
+            Grid.Row="6" Grid.Column="3"
+            HorizontalContentAlignment="Center">=</Button>
+            
+            </Grid>
+
+        </StackPanel>
+
+</Window>
